@@ -1,0 +1,17 @@
+# Файлы и директории с префиксами
+b6_*
+@_*
+
+example_*
+public/
+@_site/
+
+# Вспомогательные директории и файлы
+*.log*
+node_modules/
+resources/
+/vDev/
+wREADME.md
+
+# Файлы редактора VScode
+.vscode

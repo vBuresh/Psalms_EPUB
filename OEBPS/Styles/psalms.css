@@ -1,0 +1,287 @@
+/* em, px, pt, cm, in..: https://www.w3.org/Style/Examples/007/units.ru.html */
+
+/* variables */
+:root {
+  --ps-gray-100: #f8f9fa;
+  --ps-gray-200: #e9ecef;
+  --ps-gray-300: #dee2e6;
+  --ps-gray-400: #ced4da;
+  --ps-gray-500: #adb5bd;
+  --ps-gray-600: #6c757d;
+  --ps-gray-700: #495057;
+  --ps-gray-800: #343a40;
+  --ps-gray-900: #212529;
+  --ps-body-bg: #fff;
+  --ps-body-color: #212529;
+  --ps-blue: #0066cc;
+  --ps-cukinovar: #cc3300;
+  --ps-green: #33ffcc;
+  --ps-yrllow: #ffcc33;
+  --ps-red: #cc0066;
+  --ps-gutter-x: 1.5rem;
+  --ps-gutter-y: 0;
+}
+
+/* * Globals 
+  max-width: 42em;
+
+.ps-container {
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-left: var(--ps-gutter-x, 0.75rem);
+  padding-right: var(--ps-gutter-x, 0.75rem);
+  width: 100%;
+}
+*/
+
+/* Fonts */
+/* Шрифты и заголовки: 6 уровней */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../Fonts/FiraSans-Regular.woff2") format('woff2'),
+    url("../Fonts/FiraSans-Regular.otf") format('opentype'),
+    url("../Fonts/FiraSans-Bold.woff2") format('woff2'),
+    url("../Fonts/FiraSans-Bold.otf") format('opentype'),
+    url("../Fonts/FiraSans-Italic.woff2") format('woff2'),
+    url("../Fonts/FiraSans-Italic.otf") format('opentype');
+}
+
+/* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
+/* церковнославянский */
+@font-face {
+  font-family: 'Cathisma Unicode';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../Fonts/CathismaUnicode.woff2") format('woff2'),
+    url("../Fonts/CathismaUnicode.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Ponomar Unicode';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../Fonts/PonomarUnicode.woff2") format('woff2'),
+    url("../Fonts/PonomarUnicode.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Pomorsky Unicode';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../Fonts/PomorskyUnicode.woff2") format('woff2'),
+    url("../Fonts/PomorskyUnicode.otf") format('opentype');
+}
+
+/* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
+/* Heading */
+.csh,
+.csh1,
+.csh2,
+.csh3,
+.csh4,
+.csh5,
+.csh6,
+.csid,
+.csl1,
+.csl2,
+.csl3,
+.csl4,
+.csl5 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.csl1 {
+  font-size: 5rem;
+}
+
+.kafisma,
+.csl2 {
+  font-size: 4.5rem;
+}
+
+.csl3 {
+  font-size: 4rem;
+}
+
+.csl4 {
+  font-size: 3.5rem;
+}
+
+.csl5 {
+  font-size: 3rem;
+}
+
+/* csh - header */
+.csh1 {
+  font-size: 2.5rem;
+}
+
+.psalom,
+.csh2 {
+  font-size: 2rem;
+}
+
+.cstxt,
+.ps-slava,
+.csh3 {
+  font-size: 1.75rem;
+}
+
+.oglav-list,
+.csh4 {
+  font-size: 1.5rem;
+}
+
+/* малые, уменьшенные */
+.rucs,
+.csh5 {
+  font-size: 1.25rem;
+}
+
+.rutxt,
+.csh6 {
+  font-size: 1rem;
+}
+
+.kafisma,
+.buk-ks {
+  font-family: "Cathisma Unicode";
+}
+
+.buk-pomor,
+.pomor {
+  font-family: "Pomorsky Unicode"
+}
+
+/* Текст на церковнославянском */
+/* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
+/*FIXME: .kstxt, не работает см id="ps2"*/
+.ps-slava,
+.oglav-list a {
+  text-decoration: none;
+}
+
+/* .navtoc-ks, .navtoc-ps, .psalom, .slavaks, */
+.cstxt {
+  font-family: 'Ponomar Unicode';
+  /* font-size: 1.5rem; */
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.rucs,
+.rutxt {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.rutxt,
+.rucs {
+  line-height: 1.5rem;
+}
+
+.rucs b {
+    color: var(--ps-cukinovar);
+    font-weight: normal;
+    padding-left: 0;
+  }
+
+.cstxt b {
+  color: var(--ps-cukinovar);
+  font-weight: normal;
+  padding-left: 0;
+}
+
+.cstxt i {
+  color: var(--ps-gray-600);
+  font-weight: normal;
+  font-size: 0.8em;
+  padding-right: 3px;
+  font-style: normal;
+}
+
+/* первоисточник */
+.cstxt cite {
+  display: block;
+  color: var(--ps-gray-600);
+  font-size: 0.8em;
+  text-align: right !important;
+  margin-top: .5em !important;
+  margin-bottom: .02rem;
+  font-style: normal;
+}
+
+.cstxt cite::before {
+  content: "— ";
+}
+
+.kafisma,
+.buk-pomor,
+.ps-slava,
+.oglav-ks,
+.psalom {
+  color: var(--ps-cukinovar);
+  font-weight: normal;
+}
+
+.kafisma,
+.ps-slava,
+.psalom {
+  text-align: center;
+}
+
+/* .ps-slava, */
+.kafisma {
+  padding-bottom: 42px;
+}
+
+.ps-slava a {
+  display: block;
+}
+
+.buk-pomor {
+  float: left;
+  font-size: 3.5rem;
+  margin: 25px 2px 2px 0;
+  /* Отступы вокруг буквы */
+}
+
+.buk-ks {
+  float: left;
+  font-size: 6.2rem;
+  margin: 34px 4px 8px 0;
+  /* Отступы вокруг буквы */
+}
+
+/* NOTE: https://habr.com/ru/post/22507/ */
+.kstxt ul {
+  border-color: var(--ps-gray-400);
+  border-top-style: solid;
+  border-top: 0.5px padding: 5px 0 20px 0px;
+  line-height: 1.75rem;
+}
+
+/* footnote */
+.snoska li {
+  color: var(--ps-gray-600);
+  list-style: none;
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+
+/* TODO: зделать славы
+
+.oglav-ps - d ju
+.ks-slava
+.zastavka
+*/
+/* ./церковнославянский */
+/* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
