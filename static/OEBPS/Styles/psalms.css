@@ -22,7 +22,7 @@
   --ps-gutter-y: 0;
 }
 
-/* * Globals 
+/* * Globals
   max-width: 42em;
 
 .ps-container {
@@ -82,24 +82,35 @@
 
 /* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
 /* Heading */
-.csh,
-.csh1,
-.csh2,
-.csh3,
-.csh4,
-.csh5,
-.csh6,
-.csid,
+ /* .csh, */
+/* .csid,
 .csl1,
 .csl2,
 .csl3,
 .csl4,
-.csl5 {
+.csl5  */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.slava {
+  color: var(--ps-cukinovar);
   font-weight: normal;
   text-align: center;
 }
 
-.csl1 {
+
+
+/* .csl1 {
   font-size: 5rem;
 }
 
@@ -118,10 +129,10 @@
 
 .csl5 {
   font-size: 3rem;
-}
+} */
 
 /* csh - header */
-.csh1 {
+/* .csh1 {
   font-size: 2.5rem;
 }
 
@@ -139,9 +150,9 @@
 .oglav-list,
 .csh4 {
   font-size: 1.5rem;
-}
+} */
 
-/* малые, уменьшенные */
+/* малые, уменьшенные
 .rucs,
 .csh5 {
   font-size: 1.25rem;
@@ -156,6 +167,7 @@
 .buk-ks {
   font-family: "Cathisma Unicode";
 }
+*/
 
 .buk-pomor,
 .pomor {
@@ -165,20 +177,51 @@
 /* Текст на церковнославянском */
 /* 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 */
 /*FIXME: .kstxt, не работает см id="ps2"*/
-.ps-slava,
+/* .ps-slava,
 .oglav-list a {
   text-decoration: none;
-}
+}  */
 
 /* .navtoc-ks, .navtoc-ps, .psalom, .slavaks, */
-.cstxt {
+.psalms-cu {
   font-family: 'Ponomar Unicode';
-  /* font-size: 1.5rem; */
-  line-height: 2.25rem;
+  /* font-size: 1.25rem;
+  line-height: 2.05rem; */
   font-style: normal;
+  padding-left: var(--ps-gutter-x, 0.75rem);
+  padding-right: var(--ps-gutter-x, 0.75rem);
 }
 
-.rucs,
+.cathisma p::first-letter {
+  font-family: "Pomorsky Unicode"
+  color: var(--ps-cukinovar);
+  margin: 34px 4px 8px 0;
+}
+
+.cathisma sup {
+  color: var(--ps-cukinovar);
+  font-weight: normal;
+  font-size: 0.8em;
+  padding-right: 3px;
+  font-style: normal;
+  float: left;
+}
+
+.cathisma p::first-letter {
+  color: var(--ps-cukinovar);
+  margin: 34px 4px 8px 0;
+}
+
+
+/* FIXME: не работает
+@page {
+  @footnote {
+    float: bottom;
+  }
+}
+
+span.footnote { float: footnote; } */
+/* .rucs,
 .rutxt {
   font-family: 'Fira Sans', sans-serif;
 }
@@ -206,10 +249,10 @@
   font-size: 0.8em;
   padding-right: 3px;
   font-style: normal;
-}
+} */
 
 /* первоисточник */
-.cstxt cite {
+/* .cstxt cite {
   display: block;
   color: var(--ps-gray-600);
   font-size: 0.8em;
@@ -236,10 +279,10 @@
 .ps-slava,
 .psalom {
   text-align: center;
-}
+} */
 
 /* .ps-slava, */
-.kafisma {
+/* .kafisma {
   padding-bottom: 42px;
 }
 
@@ -251,31 +294,30 @@
   float: left;
   font-size: 3.5rem;
   margin: 25px 2px 2px 0;
-  /* Отступы вокруг буквы */
 }
 
 .buk-ks {
   float: left;
   font-size: 6.2rem;
   margin: 34px 4px 8px 0;
-  /* Отступы вокруг буквы */
-}
+
+} */
 
 /* NOTE: https://habr.com/ru/post/22507/ */
-.kstxt ul {
+/* .kstxt ul {
   border-color: var(--ps-gray-400);
   border-top-style: solid;
   border-top: 0.5px padding: 5px 0 20px 0px;
   line-height: 1.75rem;
 }
+} */
 
 /* footnote */
-.snoska li {
+/* .snoska li {
   color: var(--ps-gray-600);
   list-style: none;
   margin-left: 20px;
-  font-size: 0.8em;
-}
+  font-size: 0.8em; */
 
 /* TODO: зделать славы
 

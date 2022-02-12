@@ -5,6 +5,9 @@ b6_*
 example_*
 public/
 @_site/
+/exampleSite/EMKexample/
+/exampleSite/vDev/
+
 
 # Вспомогательные директории и файлы
 *.log*
